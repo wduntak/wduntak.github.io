@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="assets/stylesheet/animate.css">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheet/normalize.css">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheet/layout.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="assets/javascript/modernizr.js"></script>
+	</head>
+
+	<body>
+		<div class="hdr-stage active">
+			<div class="abtme-hdr visible hdr">About Me</div>
+			<div class="work-hdr hdr">Works</div>
+			<div class="exp-hdr hdr">Exp.</div>
+		</div>
+		<header id="site-slider" class="site-slider">	
+			<p id="main-logo" class="main-logo">
+				<a href="index.html">
+					<img src="../Portfolio/assets/images/logo.svg">
+				</a>
+			</p>
+			<nav id="site-nav" class="site-nav">
+				<ul class="nav-options">
+				  <li><a href="#landing-section">Home</a></li>
+				  <li><a href="#content-section">Works</a></li>
+				  <li><a href="#experience-section">Experience</a></li>
+				  <li><a href="#skill-section">Skills</a></li>
+				  <li><a href="#contact-section">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="landing-section" class="landing-section">
+			<div></div>
+		</section>
+
+		<section id="content-section" class="content-section">
+			<div id="fader"></div>
+			<div class="col-container">
+				<div id="col1">
+					<div id="c1" class="row1"></div>
+					<div id="c1" class="row2"></div>
+					<div id="c1" class="row3"></div>
+				</div>
+				<div id="col2">
+					<div id="c2" class="row1"></div>
+					<div id="c2" class="row2"></div>
+					<div id="c2" class="row3"></div>
+				</div>
+				<div id="col3">
+					<div id="c3" class="row1"></div>
+					<div id="c3" class="row2"></div>
+					<div id="c3" class="row3"></div>
+				</div>
+				<div id="col4">
+					<div id="c4" class="row1"></div>
+					<div id="c4" class="row2"></div>
+					<div id="c4" class="row3"></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="experience-section" class="experience" style="height: 750px;">
+			<div class="bg-fill"></div>
+				<nav id="nav-xp" class="nav">
+					<ul>
+						<li><a href>Freelance</a></li>
+						<li><a href>Tungsten Advertising</a></li>
+						<li><a href>Machik</a></li>
+						<li><a href>Bitmaker Labs</a></li>
+					</ul>
+				</nav>
+			<div id="xp-container">
+				<div class="xp-part xp-part-free active">
+					<div class="xp-part-banner">
+						<div></div>
+					</div>
+					<article></article>
+				</div>
+				<div class="xp-part"></div>
+				<div class="xp-part"></div>
+				<div class="xp-part"></div>
+			</div>
+		</section>
+
+		<section id="skill-section" class="skill-section">		
+			<ul class="skill-list">
+			  <li class="skill">
+			    <h3 id="skill-title">HTML5 & CSS3</h3>
+			    <progress class="skill-1" max="100" value="90">
+			      <strong>Skill Level: 50%</strong>
+			    </progress>
+			  </li>
+			  <li class="skill">
+			    <h3 id="skill-title">JAVASCRIPT & JQUERY</h3>
+			    <progress class="skill-2" max="100" value="75">
+			      <strong>Skill Level: 75%</strong>
+			    </progress>
+			  </li>
+			  <li class="skill">
+			    <h3 id="skill-title">RUBY ON RAILS</h3>
+			    <progress class="skill-3" max="100" value="80">
+			      <strong>Skill Level: 25%</strong>
+			    </progress>
+			  </li>
+			  <li class="skill">
+			    <h3 id="skill-title">GIT & GITHUB</h3>
+			    <progress class="skill-3" max="100" value="75">
+			      <strong>Skill Level: 25%</strong>
+			    </progress>
+			  </li>
+			  <li class="skill">
+			    <h3 id="skill-title">AJAX</h3>
+			    <progress class="skill-3" max="100" value="70">
+			      <strong>Skill Level: 25%</strong>
+			    </progress>
+			  </li>
+			</ul>
+		</section>
+
+		<section id="contact-section" class="contact-section">
+
+		</section>
+
+	<script>
+		$(document).ready(function(){
+			$(document).scroll(function() {
+				var top = $(document).scrollTop();
+				console.log(top)
+		        if (top > 2) {
+		        	$('#site-slider').addClass("closed")
+		        }
+		        if (top < 200) {
+		        	$('.hdr-stage').addClass("active")
+		        	$('.abtme-hdr').addClass("visible")
+		        }
+		        if (top > 400) {
+		        	$('.hdr-stage').removeClass("active")
+		        	$('.abtme-hdr').removeClass("visible")
+		        }
+		        if (top < 700) {
+		       		$('.work-hdr').removeClass("visible")
+		        }
+		        if (top > 700) {
+		        	$('.hdr-stage').addClass("active")
+		        	$('.work-hdr').addClass("visible")
+		        }
+		        if (top > 1200) {
+		        	$('.hdr-stage').removeClass("active")
+		        	$('.work-hdr').removeClass("visible")
+		        }
+		        if (top < 1480) {
+		       		$('.exp-hdr').removeClass("visible")
+		        }
+		        if (top > 1480) {
+		        	$('.hdr-stage').addClass("active")
+		        	$('.exp-hdr').addClass("visible")
+		        }
+		        if (top < 1200) 
+		        	$('.experience').removeClass("active")
+		        	$('.xp-part').removeClass("active")
+		        if (top > 1400) 
+		        	$('.experience').addClass("active")
+		        	$('.xp-part').addClass("active")
+		        if (top > 1800) 
+		        	$('.experience').removeClass("active")
+		        	$('.xp-part').addClass("active")          
+		      });
+		      $('#site-slider').hover(function(){
+		      	$('#site-slider').toggleClass('closed')
+		      });
+
+		      $("a").click(function(){
+		         $("a").toggleClass("active");
+		       });
+    });
+	</script>
+  </body>
+</html>

@@ -1,0 +1,411 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: #141414;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-size: 1em;
+  line-height: 1.4; }
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s; }
+
+a:hover {
+  color: #878787; }
+
+section {
+  display: inline-block; }
+
+div nav {
+  display: block; }
+
+/* Header Animation*/
+.hdr {
+  font-size: 5rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: -5px;
+  position: relative;
+  margin: 0px;
+  padding: 0px; }
+
+.hdr-stage {
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  left: -400px;
+  height: 90px;
+  width: 400px;
+  transition: 0.5s; }
+
+.hdr-stage.active {
+  transition: 0.5s;
+  left: 100px; }
+
+.abtme-hdr, .work-hdr, .exp-hdr, .skills-hdr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transition: 0.5s; }
+
+.abtme-hdr.visible, .work-hdr.visible, .exp-hdr.visible, .skills-hdr {
+  visibility: visible;
+  transition: 0.5s; }
+
+/* Landing Section */
+#site-slider {
+  position: fixed;
+  width: 660px;
+  height: 90px;
+  min-width: 90px;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  transition: none;
+  transform: translate3d(0, 0, 0);
+  display: inline-block;
+  overflow: hidden; }
+
+#site-slider .closed {
+  width: 90px;
+  transition: width 0s linear 0.1s; }
+
+#site-nav {
+  float: left;
+  position: relative;
+  width: 570px;
+  height: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2em;
+  color: white;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  overflow: hidden;
+  background-color: #4a4a4a;
+  transition: width 0.05s ease-in-out; }
+
+.site-slider.closed #site-nav {
+  width: 0;
+  transition: width 0.05s ease-in-out; }
+
+#site-nav ul {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 30px;
+  list-style-type: none; }
+
+#site-nav ul li {
+  display: inline;
+  margin: 0px 8px; }
+
+.nav-options:before, .nav-options:after {
+  content: " ";
+  display: table; }
+
+#main-logo {
+  width: 90px;
+  height: 90px;
+  float: left;
+  margin: 0;
+  background-color: #FBB040; }
+
+#main-logo img {
+  width: 80px;
+  height: 80px;
+  margin: 5px; }
+
+.section-fs {
+  height: 100vh;
+  min-height: 750px; }
+
+#landing-section {
+  width: 100vw;
+  height: 100vh;
+  background: url("../../assets/images/fight-bg.gif") no-repeat center center;
+  background-size: 100% 100%; }
+
+#landing-section:hover div {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: black;
+  transition: 0.4s; }
+
+#landing-section div {
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  transition: 0.4s;
+  z-index: 20; }
+
+#landing-section article {
+  z-index: 20;
+  top: 0; }
+
+/* Content Section */
+#content-section #fader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  transition: 0.4s;
+  z-index: 20; }
+
+#content-section:hover #fader {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: black;
+  transition: 0.4s; }
+
+#content-section {
+  width: 100vw;
+  height: 900px;
+  position: relative; }
+
+#col-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#col1, #col2, #col3, #col4 {
+  width: 25%;
+  height: 300px;
+  float: left;
+  display: inline-block; }
+
+#c1, #c2, #c3, #c4 {
+  width: 100%;
+  height: 100%;
+  float: left;
+  display: inline-block;
+  background-color: black;
+  z-index: 10; }
+
+#c1.row1 {
+  background: url("../../assets/images/share_table.jpg");
+  background-size: cover; }
+
+#c2.row1 {
+  background: url("../../assets/images/popr.jpg");
+  background-size: cover; }
+
+#c3.row1 {
+  background: url("../../assets/images/rainforest.jpg");
+  background-size: cover; }
+
+#c4.row1 {
+  background: url("../../assets/images/mountain.gif");
+  background-size: cover; }
+
+#c1.row2 {
+  background: url("../../assets/images/sculpt.jpg");
+  background-size: cover; }
+
+#c2.row2 {
+  background: url("../../assets/images/tibetmap.jpg");
+  background-size: cover; }
+
+#c3.row2 {
+  background: url("../../assets/images/cheesus.jpg");
+  background-size: cover; }
+
+#c4.row2 {
+  background: url("../../assets/images/tictactoe.jpg");
+  background-size: cover; }
+
+/* Experience Section */
+.bg-fill {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../../assets/images/stardust.png");
+  opacity: 0.3; }
+
+#experience-section nav {
+  padding: 100px 25px 0px 100px; }
+
+.experience {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1000;
+  display: block; }
+
+.experience.active nav {
+  background-position: 2500px center;
+  -webkit-transform: translateX(-75%);
+  transform: translateX(-75%); }
+
+.experience nav {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: 0.75s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: 0.75s cubic-bezier(0.77, 0, 0.175, 1); }
+
+.experience nav ul li {
+  text-align: right; }
+
+.experience nav ul li {
+  text-decordation: none;
+  font-size: 1.2rem;
+  color: white;
+  line-height: 5rem;
+  font-weight: 700;
+  transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: block;
+  height: 50px; }
+
+.experience.active #xp-container {
+  transform: none;
+  opacity: 1; }
+
+.experience #xp-container {
+  width: 75%;
+  background-color: #FBB040;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  opacity: 0;
+  transition: 0.8s cubic-bezier(0.77, 0, 0.175, 0.8);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transform: translateX(25%);
+  transform: translateX(25%); }
+
+.xp-part {
+  -webkit-transform: scale(0.75);
+  transform: scale(0.75);
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  transition: 0.2s;
+  opacity: 0;
+  z-index: 30;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.xp-part.active {
+  -webkit-animation: bounceInRight 0.6s cubic-bezier(0.508, 0.045, 0.355, 0.7);
+  transform: none;
+  opacity: 1;
+  z-index: 40; }
+
+.xp-part .xp-part-banner {
+  height: 194px;
+  position: relative;
+  background: no-repeat center center;
+  background-size: cover; }
+
+.xp-part .xp-part-banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%); }
+
+.xp-part-free .xp-part-banner {
+  background: url("../../assets/images/freelance.jpg"); }
+
+/* Skill Section*/
+section#skill-section {
+  width: 100vw;
+  padding: 40px 0px 0px 100px;
+  height: 800px; }
+
+/* Progress Bar */
+progress, progress[role] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-size: auto;
+  height: 50px;
+  width: 100%; }
+
+#skill-section .skill-list {
+  list-style: none;
+  margin: 0;
+  padding: 2em;
+  width: 60vw; }
+
+#skill-section .skill-list .skill {
+  margin-bottom: 1em;
+  position: relative; }
+
+.skill #skill-title {
+  color: #fff;
+  left: 1em;
+  line-height: 1;
+  position: relative;
+  top: 1em; }
+
+.skill ::-webkit-progress-value {
+  -webkit-animation: bar-fill 2s;
+  width: 0px; }
+
+.skill-1::-webkit-progress-value {
+  background: #ff9e2c; }
+
+.skill-1::-moz-progress-bar {
+  background: #ff9e2c; }
+
+.skill-2::-webkit-progress-value {
+  background: #4ecdc4; }
+
+.skill-2::-moz-progress-bar {
+  background: #4ecdc4; }
+
+.skill-3::-webkit-progress-value {
+  background: #ff6b6b; }
+
+.skill-3::-moz-progress-bar {
+  background: #ff6b6b; }
+
+@-webkit-keyframes bar-fill {
+  0% {
+    width: 0; } }
+@keyframes bar-fill {
+  0% {
+    width: 0; } }
+/* Contact Section */
+#contact-section {
+  width: 100vw;
+  height: 800px;
+  background-color: black; }
+
+/*# sourceMappingURL=layout.css.map */
