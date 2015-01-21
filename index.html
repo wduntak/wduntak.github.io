@@ -36,10 +36,12 @@
 		</section>
 
 		<section id="content-section" class="content-section">
-			<div id="fader"></div>
 			<div class="col-container">
+			<div id="fader"></div>
 				<div id="col1">
-					<div id="c1" class="row1"></div>
+					<div id="c1" class="row1">
+						<span class="mask">
+					</div>
 					<div id="c1" class="row2"></div>
 					<div id="c1" class="row3"></div>
 				</div>
@@ -52,11 +54,6 @@
 					<div id="c3" class="row1"></div>
 					<div id="c3" class="row2"></div>
 					<div id="c3" class="row3"></div>
-				</div>
-				<div id="col4">
-					<div id="c4" class="row1"></div>
-					<div id="c4" class="row2"></div>
-					<div id="c4" class="row3"></div>
 				</div>
 			</div>
 		</section>
@@ -89,31 +86,26 @@
 			  <li class="skill">
 			    <h3 id="skill-title">HTML5 & CSS3</h3>
 			    <progress class="skill-1" max="100" value="90">
-			      <strong>Skill Level: 50%</strong>
 			    </progress>
 			  </li>
 			  <li class="skill">
 			    <h3 id="skill-title">JAVASCRIPT & JQUERY</h3>
 			    <progress class="skill-2" max="100" value="75">
-			      <strong>Skill Level: 75%</strong>
 			    </progress>
 			  </li>
 			  <li class="skill">
 			    <h3 id="skill-title">RUBY ON RAILS</h3>
 			    <progress class="skill-3" max="100" value="80">
-			      <strong>Skill Level: 25%</strong>
 			    </progress>
 			  </li>
 			  <li class="skill">
 			    <h3 id="skill-title">GIT & GITHUB</h3>
 			    <progress class="skill-3" max="100" value="75">
-			      <strong>Skill Level: 25%</strong>
 			    </progress>
 			  </li>
 			  <li class="skill">
 			    <h3 id="skill-title">AJAX</h3>
 			    <progress class="skill-3" max="100" value="70">
-			      <strong>Skill Level: 25%</strong>
 			    </progress>
 			  </li>
 			</ul>
@@ -157,15 +149,21 @@
 		        	$('.hdr-stage').addClass("active")
 		        	$('.exp-hdr').addClass("visible")
 		        }
-		        if (top < 1200) 
+		        if (top < 1200) {
 		        	$('.experience').removeClass("active")
 		        	$('.xp-part').removeClass("active")
-		        if (top > 1400) 
+		        }
+		        if (top > 1400) {
 		        	$('.experience').addClass("active")
 		        	$('.xp-part').addClass("active")
-		        if (top > 1800) 
+		        }
+		        if (top > 1800){
 		        	$('.experience').removeClass("active")
-		        	$('.xp-part').addClass("active")          
+		        	$('.xp-part').addClass("active")    
+		        }      
+		        if (top > 1900){
+		        	$('.skill').addClass("animate")
+		        }
 		      });
 		      $('#site-slider').hover(function(){
 		      	$('#site-slider').toggleClass('closed')

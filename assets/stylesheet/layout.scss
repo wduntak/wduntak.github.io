@@ -191,8 +191,8 @@ div nav {
 	top:0;
 	left:0;
 	opacity: 0.5;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	background-color: black;
 	transition: 0.4s;
 	z-index: 20;
@@ -221,7 +221,7 @@ div nav {
 }
 
 #col1, #col2, #col3, #col4{
-	width: 25%;
+	width: 33.333%;
 	height: 300px;
 	float: left;
 	display: inline-block;
@@ -234,25 +234,12 @@ div nav {
 	display: inline-block;
 	background-color: black;
 	z-index: 10;
+	background-position: center;
+	background-attachment: center;
 }
 
 #c1.row1 {
 	background: url('../../assets/images/share_table.jpg');
-	background-size: cover;
-}
-
-#c2.row1 {
-	background: url('../../assets/images/popr.jpg');
-	background-size: cover;
-}
-
-#c3.row1 {
-	background: url('../../assets/images/rainforest.jpg');
-	background-size: cover;
-}
-
-#c4.row1 {
-	background: url('../../assets/images/mountain.gif');
 	background-size: cover;
 }
 
@@ -261,19 +248,47 @@ div nav {
 	background-size: cover;
 }
 
+#c1.row3 {
+	background: url('../../assets/images/mountain.gif');
+	background-size: cover;
+}
+
+#c2.row1 {
+	background: url('../../assets/images/popr.jpg');
+	background-size: cover;
+}
+
 #c2.row2 {
 	background: url('../../assets/images/tibetmap.jpg');
 	background-size: cover;
 }
+
+#c2.row3 {
+	background: url('../../assets/images/tictactoe.jpg');
+	background-size: cover;	
+}
+
+#c3.row1 {
+	background: url('../../assets/images/rainforest.jpg');
+	background-size: cover;
+}
+
 
 #c3.row2 {
 	background: url('../../assets/images/cheesus.jpg');
 	background-size: cover;
 }
 
-#c4.row2 {
-	background: url('../../assets/images/tictactoe.jpg');
-	background-size: cover;	
+.mask {
+	width: 100%;
+	height: 230px;
+	opacity: 1;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-size: 100%;
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #000000 100%);
+	z-index: 15;
 }
 
 /* Experience Section */
@@ -387,17 +402,17 @@ div nav {
 	background-size: cover;
 }
 
-.xp-part .xp-part-banner {
+.xp-part .xp-part-banner div{
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.5) 100%);
+	background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 100%);
 }
 
 .xp-part-free .xp-part-banner {
-	background: url('../../assets/images/freelance.jpg');
+	background-image: url('../../assets/images/freelance.jpg');
 }
 
 /* Skill Section*/
@@ -437,7 +452,7 @@ progress, progress[role] {
   position: relative;
   top: 1em;
 }
-.skill ::-webkit-progress-value {
+.skill.animate ::-webkit-progress-value {
   -webkit-animation: bar-fill 2s;
   width: 0px;
 }
