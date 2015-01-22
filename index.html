@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/stylesheet/layout.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="assets/javascript/modernizr.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
@@ -14,6 +15,7 @@
 			<div class="abtme-hdr visible hdr">About Me</div>
 			<div class="work-hdr hdr">Works</div>
 			<div class="exp-hdr hdr">Exp.</div>
+			<div class="skill-hdr hdr">Skills</div>
 		</div>
 		<header id="site-slider" class="site-slider">	
 			<p id="main-logo" class="main-logo">
@@ -33,6 +35,7 @@
 		</header>
 		<section id="landing-section" class="landing-section">
 			<div></div>
+			<h1 class="h1-intro"> I create <span>kick-ass</span> web and mobile apps.</h1>
 		</section>
 
 		<section id="content-section" class="content-section">
@@ -40,7 +43,7 @@
 			<div id="fader"></div>
 				<div id="col1">
 					<div id="c1" class="row1">
-						<span class="mask">
+						<span class="mask"></span>
 					</div>
 					<div id="c1" class="row2"></div>
 					<div id="c1" class="row3"></div>
@@ -148,6 +151,21 @@
 		        if (top > 1480) {
 		        	$('.hdr-stage').addClass("active")
 		        	$('.exp-hdr').addClass("visible")
+		        }
+		        if (top > 2200) {
+		        	$('.hdr-stage').removeClass("active")
+		        	$('.exp-hdr').removeClass("visible")
+		        }
+		        if (top < 2380) {
+		       		$('.skill-hdr').removeClass("visible")
+		        }
+		   		if (top > 2380) {
+		        	$('.hdr-stage').addClass("active")
+		        	$('.skill-hdr').addClass("visible")
+		        }
+		        if (top > 3000) {
+		        	$('.hdr-stage').removeClass("active")
+		        	$('.skill-hdr').removeClass("visible")
 		        }
 		        if (top < 1200) {
 		        	$('.experience').removeClass("active")
