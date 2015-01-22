@@ -1,4 +1,3 @@
-$font-stack: Arial, sans-serif;
 
 * {
   -webkit-box-sizing: border-box;
@@ -35,7 +34,7 @@ div nav {
 
 /* Header Animation*/
 .hdr {
-	font-size: 5rem;
+	font-size: 5em;
 	text-transform: uppercase;
 	line-height: 1.1;
 	letter-spacing: -5px;
@@ -43,9 +42,6 @@ div nav {
 	margin: 0px;
 	padding: 0px;
 	transition: opacity 0.5s ease-in-out;
-}
-
-.hdr.active {
 }
 
 .hdr-stage {
@@ -151,6 +147,10 @@ div nav {
 	transition: 0.5s;
 }
 
+#works-link {
+	cursor: pointer;
+}
+
 /* Landing Section */
 
 .h1-intro {
@@ -159,11 +159,14 @@ div nav {
 	margin: 15% 10% 30% 50%;
 	color: rgb(66,66,66);
 	font-family: 'Source Sans Pro', sans-serif;
+	opacity: 0.95;
 }
 
 .h1-intro span {
 	color: #FBB040;
 	font-style: italic; 
+	font-size: 1em;
+	opacity: 1;
 }
 
 .section-fs {
@@ -238,14 +241,14 @@ div nav {
 	left: 0;
 }
 
-#col1, #col2, #col3, #col4{
+#col1, #col2, #col3{
 	width: 33.333%;
 	height: 300px;
 	float: left;
 	display: inline-block;
 }
 
-#c1, #c2, #c3, #c4 {
+#c1, #c2, #c3{
 	width: 100%;
 	height: 100%; 
 	float: left;
@@ -273,7 +276,7 @@ div nav {
 }
 
 #c2.row1 {
-	background: url('../../assets/images/popr.png');
+	background: url('../../assets/images/popr.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -304,7 +307,7 @@ div nav {
 }
 
 #c3.row3 {
-	background: #FBB040;;
+	background: #FBB040;
 	background-size: cover;
 	background-position: center;
 }
@@ -368,17 +371,24 @@ span.mask {
 }
 
 .experience nav ul li {
-	text-decordation: none;
+	text-decoration: none;
 	font-size: 1.2rem;
 	color: white;
-	line-height: 5rem;
-	font-weight: 700;
+	line-height: normal;
+	font-weight: 500;
 	transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 	display: block;
 	height: 50px;
 }
 
+.experience nav ul li a.active {
+	opacity: 1;
+}
 
+.experience nav ul li a {
+	opacity: 0.5;
+	cursor: pointer;
+}
 
 .experience.active #xp-container {
 	transform: none;
@@ -425,6 +435,10 @@ span.mask {
 	z-index: 40;
 }
 
+.xp-part.hide {
+	-webkit-animation: bounceInRight 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
 .xp-part .xp-part-banner {
 	height: 194px;
 	position: relative;
@@ -443,6 +457,10 @@ span.mask {
 
 .xp-part-free .xp-part-banner {
 	background-image: url('../../assets/images/freelance.jpg');
+}
+
+.xp-part-machik .xp-part-banner {
+	background-image: url('../../assets/images/machik.jpg');
 }
 
 /* Skill Section*/
@@ -528,4 +546,49 @@ progress, progress[role] {
 	width: 100vw;
 	height: 800px;
 	background-color: black;
+	padding-top: 18%;
+}
+
+#contact-section h1, #contact-section h3 {
+	text-align: center;
+	color: white;
+	opacity: 0.9;
+}
+
+#contact-section h1 {
+	font-size: 3em;
+}
+
+#contact-section h3 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.contact-icons {
+	-webkit-padding-start: 0px;
+}
+
+.contact-icons li {
+	display: inline;
+	list-style-type: none;
+	width: 50px;
+	height: 50px;
+}
+
+.contact-icons li a {
+	width: 50px;
+	height: 50px;
+}
+
+.git-ico {
+	background: url('../images/github.png');
+}
+
+.copyright {
+	position: relative;
+	text-align: center;
+	opacity: 0.5;
+	top: 50%;
+	font-size: 0.7em;
 }

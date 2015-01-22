@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/stylesheet/layout.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="assets/javascript/modernizr.js"></script>
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
@@ -25,8 +25,8 @@
 			</p>
 			<nav id="site-nav" class="site-nav">
 				<ul class="nav-options">
-				  <li><a href="#landing-section">Home</a></li>
-				  <li><a href="#content-section">Works</a></li>
+				  <li><a href>Home</a></li>
+				  <li><a id="works-link">Works</a></li>
 				  <li><a href="#experience-section">Experience</a></li>
 				  <li><a href="#skill-section">Skills</a></li>
 				  <li><a href="#contact-section">Contact</a></li>
@@ -65,14 +65,33 @@
 			<div class="bg-fill"></div>
 				<nav id="nav-xp" class="nav">
 					<ul>
-						<li><a href>Freelance</a></li>
-						<li><a href>Tungsten Advertising</a></li>
-						<li><a href>Machik</a></li>
-						<li><a href>Bitmaker Labs</a></li>
+						<li><a class="active">Freelance</a></li>
+						<li><a>Tungsten Advertising</a></li>
+						<li><a>Machik</a></li>
+						<li><a>Bitmaker Labs</a></li>
 					</ul>
+					<span id="exp-pointer class=pos1"></span>
 				</nav>
 			<div id="xp-container">
 				<div class="xp-part xp-part-free active">
+					<div class="xp-part-banner">
+						<div></div>
+					</div>
+					<article></article>
+				</div>
+				<div class="xp-part xp-part-tungsten hide">
+					<div class="xp-part-banner">
+						<div></div>
+					</div>
+					<article></article>
+				</div>
+				<div class="xp-part xp-part-machik hide">
+					<div class="xp-part-banner">
+						<div></div>
+					</div>
+					<article></article>
+				</div>
+				<div class="xp-part xp-part-bitmaker hide">
 					<div class="xp-part-banner">
 						<div></div>
 					</div>
@@ -115,11 +134,26 @@
 		</section>
 
 		<section id="contact-section" class="contact-section">
-
+			<h1>CONTACT</h1>
+			<h3>wduntak@gmail.com</h3>
+			<center>
+				<ul class="contact-icons">
+					<li><img src="../Website/assets/images/github.png"/></li>
+					<li><img src="../Website/assets/images/twitter.png"/></li>
+					<li><img src="../Website/assets/images/linkedin.png"/></li>
+					<li><img src="../Website/assets/images/behance.png"/></li>
+				</ul>
+			</center>
+			<p class="copyright">Copyright &copy; 2015 - Wangdu Duntak</p>
 		</section>
 
 	<script>
 		$(document).ready(function(){
+			
+			$('#works-link').click(function() {
+  				 $(document).scrollTo($('#content-section'), 500);
+			});
+
 			$(document).scroll(function() {
 				var top = $(document).scrollTop();
 				console.log(top)
@@ -190,7 +224,7 @@
 		      $("a").click(function(){
 		         $("a").toggleClass("active");
 		       });
-    });
+		});
 	</script>
   </body>
 </html>
