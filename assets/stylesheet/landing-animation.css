@@ -1,7 +1,7 @@
 /* Landing Animation */
 
 .cd-intro {
-  min-width: 600px;
+  min-width: 700px;
   text-align: center;
   font-family: $font-default;
 }
@@ -26,6 +26,9 @@
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  text-align: right;
+  height: 300px;
+  display: inline-block;
 }
 @media only screen and (min-width: 768px) {
   .cd-headline {
