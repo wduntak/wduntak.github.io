@@ -297,13 +297,17 @@ transition: 0.5s;
 	height: 100%; 
 	float: left;
 	display: inline-block;
-	background-color: black;
 	z-index: 10;
+	transition: 0.5s ease;
+}
+
+#c1:hover, #c2:hover, #c3:hover {
+	background-size: 90%;
 }
 
 #c1.row1 {
 	background: url('../../assets/images/share_table.jpg');
-	background-size: cover;
+	background-size: 100%;
 	background-position: center;
 }
 
@@ -510,14 +514,14 @@ span.mask {
 }
 
 .xp-part.active {
-	-webkit-animation: bounceInRight 0.6s cubic-bezier(0.508, 0.045, 0.355, 0.7);
+	-webkit-animation: bounceInRight 0.6s cubic-bezier(0.408, 0.045, 0.255, 0.7);
 	transform: none;
 	opacity: 1;
 	z-index: 40;
 }
 
 .xp-part.hide {
-	-webkit-animation: bounceInRight 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	-webkit-animation: bounceInRight 0.5s cubic-bezier(0.545, 0.045, 0.255, 1);
 	opacity: 0;
 }
 
@@ -546,6 +550,17 @@ span.mask {
 
 .xp-part article h1 {
 	font-size: 4em;
+	margin-bottom: 0em;
+}
+
+.xp-part article #exp-date {
+	font-size: 0.8em;
+	font-style: italic;
+	margin: -0.2em;
+}
+
+.xp-part article h2 {
+	margin-top: 0.3em;
 }
 
 .xp-part-free .xp-part-banner {
