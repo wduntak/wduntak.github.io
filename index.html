@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="assets/stylesheet/animate.css">
 		<link rel="stylesheet" type="text/css" href="assets/stylesheet/normalize.css">
 		<link rel="stylesheet" type="text/css" href="assets/stylesheet/layout.css">
+		<link rel="stylesheet" type="text/css" href="assets/stylesheet/landing-animation.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="assets/javascript/modernizr.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
@@ -16,6 +17,7 @@
 			<div class="work-hdr hdr">Works</div>
 			<div class="exp-hdr hdr">Exp.</div>
 			<div class="skill-hdr hdr">Skills</div>
+			<div class="contact-hdr hdr">Contacts</div>
 		</div>
 		<header id="site-slider" class="site-slider">	
 			<p id="main-logo" class="main-logo">
@@ -35,7 +37,17 @@
 		</header>
 		<section id="landing-section" class="landing-section">
 			<div></div>
-			<h1 class="h1-intro"> I create <span>kick-ass</span> web and mobile apps.</h1>
+			<section class="cd-intro">
+				<h1 class="cd-headline rotate-1">
+					<span>I create</span>
+					<span class="cd-words-wrapper">
+						<b class="is-visible">awesomely</b>
+						<b>&nbsp;&nbsp;kick-ass</b>
+						<b>&nbsp;designed</b>
+					</span>
+					<span> web and mobile apps.</span>
+				</h1>
+			</section> 
 		</section>
 
 		<section id="content-section" class="content-section">
@@ -147,6 +159,8 @@
 			<p class="copyright">Copyright &copy; 2015 - Wangdu Duntak</p>
 		</section>
 
+	<script src="assets/javascript/scroll.js"></script>
+	<script src="assets/javascript/animation-header.js"></script>
 	<script>
 		$(document).ready(function(){
 			
@@ -156,50 +170,8 @@
 
 			$(document).scroll(function() {
 				var top = $(document).scrollTop();
-				console.log(top)
 		        if (top > 2) {
 		        	$('#site-slider').addClass("closed")
-		        }
-		        if (top < 200) {
-		        	$('.hdr-stage').addClass("active")
-		        	$('.abtme-hdr').addClass("visible")
-		        }
-		        if (top > 400) {
-		        	$('.hdr-stage').removeClass("active")
-		        	$('.abtme-hdr').removeClass("visible")
-		        }
-		        if (top < 700) {
-		       		$('.work-hdr').removeClass("visible")
-		        }
-		        if (top > 700) {
-		        	$('.hdr-stage').addClass("active")
-		        	$('.work-hdr').addClass("visible")
-		        }
-		        if (top > 1200) {
-		        	$('.hdr-stage').removeClass("active")
-		        	$('.work-hdr').removeClass("visible")
-		        }
-		        if (top < 1480) {
-		       		$('.exp-hdr').removeClass("visible")
-		        }
-		        if (top > 1480) {
-		        	$('.hdr-stage').addClass("active")
-		        	$('.exp-hdr').addClass("visible")
-		        }
-		        if (top > 2200) {
-		        	$('.hdr-stage').removeClass("active")
-		        	$('.exp-hdr').removeClass("visible")
-		        }
-		        if (top < 2380) {
-		       		$('.skill-hdr').removeClass("visible")
-		        }
-		   		if (top > 2380) {
-		        	$('.hdr-stage').addClass("active")
-		        	$('.skill-hdr').addClass("visible")
-		        }
-		        if (top > 3000) {
-		        	$('.hdr-stage').removeClass("active")
-		        	$('.skill-hdr').removeClass("visible")
 		        }
 		        if (top < 1200) {
 		        	$('.experience').removeClass("active")
