@@ -163,7 +163,6 @@ div nav {
 #landing-section {
 	width: 100%;
 	height: 778px;
-/*	background: url('../../assets/images/fight-bg.gif') no-repeat center center;*/
 	background-color: white;
 	background-size: 100% 100%;
 }
@@ -191,6 +190,62 @@ div nav {
 #landing-section article {
 	z-index: 20;
 	top: 0;
+}
+
+.continue-scroll:hover {
+	background-color: #FBB040;
+	transition: 1s;
+	color: white;
+	opacity: 0.9;
+}
+
+.continue-scroll {
+position: absolute;
+display: block;
+right: 0;
+left: 0;
+bottom: 0;
+height: 70px;
+z-index: 13;
+font-size: 18px;
+line-height: 70px;
+background: white;
+text-align: center;
+color: rgba(55,55,55,0.9);
+cursor: pointer;
+-webkit-transition: 0.5s;
+-moz-transition: 0.5s;
+-ms-transition: 0.5s;
+transition: 0.5s;
+}
+
+/* About Section */
+
+#about-section {
+	width: 100%;
+	height: 845px;
+	background-image: linear-gradient(to bottom, #99F0C4 0%, #4ecdc4 100%);
+	background-size: 100% 100%;
+}
+
+#about-section:hover div {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background-color: black;
+	transition: 0.4s;
+}
+
+#landing-section div {
+	position: absolute;
+	top:0;
+	opacity: 0.4;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	background-color: black;
+	transition: 0.4s;
+	z-index: 20;
 }
 
 /* Content Section */
@@ -324,7 +379,7 @@ span.mask {
 }
 
 #experience-section nav {
-	padding: 100px 25px 0px 100px;
+	padding: 150px 25px 0px 100px;
 }
 
 .experience {
@@ -378,6 +433,44 @@ span.mask {
 .experience nav ul li a {
 	opacity: 0.5;
 	cursor: pointer;
+}
+
+.experience #exp-pointer {
+	height: 50px;
+	width: 10px;
+	position: absolute;
+	display: block;
+	right: -2px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+	transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	background-color: #FBB040;
+}
+
+.pos1 {
+	transform: translateY(-215px);
+}
+
+.pos2 {
+	-webkit-transform: translateY(-165px);
+	-ms-transform: translateY(-165px);
+	-o-transform: translateY(-165px);
+	transform: translateY(-165px);
+}
+
+.pos3 {
+	-webkit-transform: translateY(-115px);
+	-ms-transform: translateY(-115px);
+	-o-transform: translateY(-115px);
+	transform: translateY(-115px);
+}
+
+.pos4 {
+	-webkit-transform: translateY(-65px);
+	-ms-transform: translateY(-65px);
+	-o-transform: translateY(-65px);
+	transform: translateY(-65px);
 }
 
 .experience.active #xp-container {
@@ -441,14 +534,13 @@ span.mask {
 	right: 0;
 	bottom: 0;
 	left: 0;
-/*	background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 100%);*/
 }
 
 .xp-part article {
 	width: 100%;
 	height: 100%;
 	padding: 4rem;
-	color: black;
+	color: rgba(27,27,27,0.9);
 	background-image: linear-gradient(to bottom, #FFFFFF 0%, #CFCFCF 100%);
 }
 
@@ -465,7 +557,7 @@ span.mask {
 }
 
 .xp-part-tungsten .xp-part-banner {
-	background-image: url('../../assets/images/tungsten.png')
+	background-image: url('../../assets/images/tungsten.png');
 }
 
 .xp-part-bitmaker .xp-part-banner {
@@ -554,7 +646,6 @@ progress, progress[role] {
 #contact-section {
 	width: 100%;
 	height: 800px;
-/*	background-color: black;*/
 	background-image: linear-gradient(to bottom, #ef8e2a 0%, #e04f0c 100%);
 	padding-top: 12%;
 }

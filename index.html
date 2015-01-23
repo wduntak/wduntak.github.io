@@ -13,8 +13,8 @@
 	</head>
 
 	<body>
-		<div class="hdr-stage active">
-			<div class="abtme-hdr visible hdr">about me</div>
+		<div class="hdr-stage">
+			<div class="abtme-hdr hdr">about me</div>
 			<div class="work-hdr hdr">Works</div>
 			<div class="exp-hdr hdr">Exp.</div>
 			<div class="skill-hdr hdr">Skills</div>
@@ -42,9 +42,12 @@
 				<h1 class="cd-headline rotate-1">
 					<span>I create</span><span class="cd-words-wrapper"><b class="is-visible">&nbsp;awesomely</b><b>&nbsp;&nbsp;&nbsp;&nbsp;kick-ass</b></span><span>web and mobile apps.</span>
 				</h1>
+				<a class="continue-scroll"><span>Continue</span></a>
 			</section> 
 		</section>
-
+		<section id="about-section">
+			<div></div>
+		</section>
 		<section id="content-section" class="content-section">
 			<div class="col-container">
 			<div id="fader"></div>
@@ -66,7 +69,7 @@
 			</div>
 		</section>
 
-		<section id="experience-section" class="experience" style="height: 750px;">
+		<section id="experience-section" class="experience" style="height: 790px;">
 			<div class="bg-fill"></div>
 			<nav id="nav-xp" class="nav">
 				<ul>
@@ -75,7 +78,7 @@
 					<li><a class="link-machik">Machik</a></li>
 					<li><a class="link-bitmaker">Bitmaker Labs</a></li>
 				</ul>
-				<span id="exp-pointer class=pos1"></span>
+				<div id="exp-pointer" class="pos1"></div>
 			</nav>
 			<div id="xp-container">
 				<div class="xp-part xp-part-free active">
@@ -90,19 +93,25 @@
 					<div class="xp-part-banner">
 						<div></div>
 					</div>
-					<article></article>
+					<article>
+						<h1>TUNGSTEN</h1>
+					</article>
 				</div>
 				<div class="xp-part xp-part-machik hide">
 					<div class="xp-part-banner">
 						<div></div>
 					</div>
-					<article></article>
+					<article>
+						<h1>MACHIK</h1>
+					</article>
 				</div>
 				<div class="xp-part xp-part-bitmaker hide">
 					<div class="xp-part-banner">
 						<div></div>
 					</div>
-					<article></article>
+					<article>
+						<h1>BITMAKER</h1>
+					</article>
 				</div>
 			</div>
 		</section>
@@ -157,27 +166,45 @@
 		$(document).ready(function(){
 			
 			$('#works-link').click(function() {
-  				 $(document).scrollTo($('#content-section'), 500);
+  			$(document).scrollTo($('#content-section'), 500);
 			});
+
+			$('.link-free').click(function(){
+				$('#exp-pointer').removeClass('pos1 pos2 pos3 pos4');
+				$('#exp-pointer').addClass('pos1');
+			});
+			$('.link-tungsten').click(function(){
+				$('#exp-pointer').removeClass('pos1 pos2 pos3 pos4');
+				$('#exp-pointer').addClass('pos2');
+			});
+			$('.link-machik').click(function(){
+				$('#exp-pointer').removeClass('pos1 pos2 pos3 pos4');
+				$('#exp-pointer').addClass('pos3');
+			});
+			$('.link-bitmaker').click(function(){
+				$('#exp-pointer').removeClass('pos1 pos2 pos3 pos4');
+				$('#exp-pointer').addClass('pos4');
+			});
+						
 
 			$(document).scroll(function() {
 				var top = $(document).scrollTop();
 		        if (top > 2) {
 		        	$('#site-slider').addClass("closed")
 		        }
-		        if (top < 1200) {
+		        if (top < 2100) {
 		        	$('.experience').removeClass("active")
 		        	$('.xp-part').removeClass("active")
 		        }
-		        if (top > 1400) {
+		        if (top > 2300) {
 		        	$('.experience').addClass("active")
 		        	$('.xp-part').addClass("active")
 		        }
-		        if (top > 1800){
+		        if (top > 2700){
 		        	$('.experience').removeClass("active")
 		        	$('.xp-part').addClass("active")    
 		        }      
-		        if (top > 2400){
+		        if (top > 3300){
 		        	$('.skill').addClass("animate")
 		        }
 		  });
