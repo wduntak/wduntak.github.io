@@ -20,7 +20,7 @@
 			<div class="skill-hdr hdr">Skills</div>
 			<div class="contact-hdr hdr">Contacts</div>
 		</div>
-		<header id="site-slider" class="site-slider">	
+		<header id="site-slider" class="site-slider closed">	
 			<p id="main-logo" class="main-logo">
 				<a href="index.html">
 					<img src="assets/images/logo.svg">
@@ -28,8 +28,8 @@
 			</p>
 			<nav id="site-nav" class="site-nav">
 				<ul class="nav-options">
-				  <li><a href>About</a></li>
-				  <li><a id="works-link">Works</a></li>
+				  <li><a href="#about-section">About</a></li>
+				  <li><a href="#content-section">Works</a></li>
 				  <li><a href="#experience-section">Experience</a></li>
 				  <li><a href="#skill-section">Skills</a></li>
 				  <li><a href="#contact-section">Contact</a></li>
@@ -40,7 +40,7 @@
 			<div></div>
 			<section class="cd-intro">
 				<h1 class="cd-headline rotate-1">
-					<span>I create web and mobile apps that are</span><span class="cd-words-wrapper"><b class="is-visible">&nbsp;&nbsp;responsive.</b><b>&nbsp;&nbsp;&nbsp;&nbsp;well-designed.</b><b> kick-ass!</b></span>
+					<span class="set-txt">I create web and mobile apps that are</span><span class="cd-words-wrapper"><b class="is-visible">&nbsp;responsive.</b><b>&nbsp;well-designed.</b><b>&nbsp;kick-ass!</b></span>
 				</h1>
 				<a class="continue-scroll"><span>Continue</span></a>
 			</section> 
@@ -171,6 +171,12 @@
 	<script src="assets/javascript/animation-header.js"></script>
 	<script>
 		$(document).ready(function(){
+
+			$(".continue-scroll").click(function() {
+  			$('html, body').animate({
+      		scrollTop: $("#about-section").offset().top
+ 			 	}, 1200);
+			});
 			
 			$('#works-link').click(function() {
   			$(document).scrollTo($('#content-section'), 500);
@@ -196,9 +202,6 @@
 
 			$(document).scroll(function() {
 				var top = $(document).scrollTop();
-		        if (top > 2) {
-		        	$('#site-slider').addClass("closed")
-		        }
 		        if (top < 2100) {
 		        	$('.experience').removeClass("active")
 		        	$('.xp-part').removeClass("active")

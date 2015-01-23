@@ -1,18 +1,18 @@
 /* Landing Animation */
 
 .cd-intro {
-  min-width: 700px;
-  text-align: center;
+  min-width: 30%;
   font-family: $font-default;
+  text-align: left;
 }
 
 .cd-intro {
-  margin: 10em 15em 10em 8em;
+  margin: 15em 1em 15em;
   color: rgba(50,50,50,0.8);
 }
 @media only screen and (min-width: 768px) {
   .cd-intro {
-    margin: 15em 20em 20em 27em;
+    margin: 12em 12em 3em;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -23,10 +23,9 @@
 
 .cd-headline {
   line-height: 1.2;
-  text-align: center;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  text-align: right;
+  text-align: left;
   height: 300px;
   display: inline-block;
 }

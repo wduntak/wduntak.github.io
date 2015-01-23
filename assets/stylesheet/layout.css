@@ -162,6 +162,9 @@ div nav {
   z-index: 20;
   top: 0; }
 
+.set-txt {
+  text-align: left; }
+
 .continue-scroll:hover {
   background-color: #FBB040;
   transition: 1s;
