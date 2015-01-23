@@ -556,7 +556,7 @@ progress, progress[role] {
 	height: 800px;
 /*	background-color: black;*/
 	background-image: linear-gradient(to bottom, #ef8e2a 0%, #e04f0c 100%);
-	padding-top: 18%;
+	padding-top: 12%;
 }
 
 #contact-section h1, #contact-section h3 {
@@ -586,20 +586,16 @@ progress, progress[role] {
 	height: 50px;
 }
 
-.contact-icons li a {
-	width: 50px;
-	height: 50px;
-}
-
-.git-ico {
-	background: url('../images/github.png');
+.contact-icons li img {
+	border: 3px solid white;
+	margin: 5px;
 }
 
 .copyright {
 	position: relative;
 	text-align: center;
 	opacity: 0.5;
-	top: 50%;
+	top: 45%;
 	font-size: 0.7em;
 }
 
