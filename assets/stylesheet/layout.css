@@ -27,11 +27,12 @@ div nav {
 
 /* Header Animation*/
 .hdr {
+  position: absolute;
   font-size: 5em;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  font-family: "Lato", sans-serif;
   line-height: 1.1;
-  letter-spacing: -5px;
-  position: relative;
+  letter-spacing: -1px;
   margin: 0px;
   padding: 0px;
   transition: opacity 0.5s ease-in-out; }
@@ -71,13 +72,13 @@ div nav {
   position: relative;
   width: 570px;
   height: 100%;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1.2em;
   color: white;
   line-height: 50px;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: -0.5px;
+  letter-spacing: 0.2px;
   overflow: hidden;
   background-color: #4a4a4a;
   transition: width 0.05s ease-in-out; }
@@ -92,6 +93,7 @@ div nav {
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
   -webkit-padding-start: 30px;
+  -webkit-padding-end: 30px;
   list-style-type: none; }
 
 #site-nav ul li {
@@ -125,32 +127,18 @@ div nav {
   visibility: visible;
   transition: 0.5s; }
 
+.abtme-hdr {
+  color: rgba(50, 50, 50, 0.8); }
+
 #works-link {
   cursor: pointer; }
 
 /* Landing Section */
-.h1-intro {
-  font-size: 4em;
-  width: 600px;
-  margin: 15% 10% 30% 50%;
-  color: #424242;
-  font-family: 'Source Sans Pro', sans-serif;
-  opacity: 0.95; }
-
-.h1-intro span {
-  color: #FBB040;
-  font-style: italic;
-  font-size: 1em;
-  opacity: 1; }
-
-.section-fs {
-  height: 100%;
-  min-height: 750px; }
-
 #landing-section {
   width: 100%;
-  height: 762px;
-  background: url("../../assets/images/fight-bg.gif") no-repeat center center;
+  height: 778px;
+  /*	background: url('../../assets/images/fight-bg.gif') no-repeat center center;*/
+  background-color: white;
   background-size: 100% 100%; }
 
 #landing-section:hover div {
@@ -163,9 +151,10 @@ div nav {
 #landing-section div {
   position: absolute;
   top: 0;
-  opacity: 0.5;
+  opacity: 0.4;
   width: 100%;
   height: 100%;
+  pointer-events: none;
   background-color: black;
   transition: 0.4s;
   z-index: 20; }
@@ -191,7 +180,8 @@ div nav {
   height: 100%;
   opacity: 0;
   background-color: black;
-  transition: 0.4s; }
+  transition: 0.4s;
+  pointer-events: none; }
 
 #content-section {
   width: 100%;
@@ -292,7 +282,8 @@ span.mask {
   overflow: hidden;
   transform-style: preserve-3d;
   -webkit-perspective: 1000;
-  display: block; }
+  display: block;
+  font-family: "Lato", sans-serif; }
 
 .experience.active nav {
   background-position: 2500px center;
@@ -338,7 +329,6 @@ span.mask {
 
 .experience #xp-container {
   width: 75%;
-  background-color: #FBB040;
   position: absolute;
   height: 100%;
   top: 0;
@@ -357,7 +347,6 @@ span.mask {
   -webkit-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
   transition: 0.2s;
-  opacity: 0;
   z-index: 30;
   position: absolute;
   top: 0;
@@ -374,7 +363,8 @@ span.mask {
   z-index: 40; }
 
 .xp-part.hide {
-  -webkit-animation: bounceInRight 0.5s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  -webkit-animation: bounceInRight 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  opacity: 0; }
 
 .xp-part .xp-part-banner {
   height: 194px;
@@ -388,13 +378,29 @@ span.mask {
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 100%); }
+  /*	background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 100%);*/ }
+
+.xp-part article {
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+  color: black;
+  background-image: linear-gradient(to bottom, #FFFFFF 0%, #CFCFCF 100%); }
+
+.xp-part article h1 {
+  font-size: 4em; }
 
 .xp-part-free .xp-part-banner {
   background-image: url("../../assets/images/freelance.jpg"); }
 
 .xp-part-machik .xp-part-banner {
   background-image: url("../../assets/images/machik.jpg"); }
+
+.xp-part-tungsten .xp-part-banner {
+  background-image: url("../../assets/images/tungsten.png"); }
+
+.xp-part-bitmaker .xp-part-banner {
+  background-image: url("../../assets/images/bitmaker.jpg"); }
 
 /* Skill Section*/
 section#skill-section {
@@ -461,19 +467,20 @@ progress, progress[role] {
 #contact-section {
   width: 100%;
   height: 800px;
-  background-color: black;
+  /*	background-color: black;*/
+  background-image: linear-gradient(to bottom, #ef8e2a 0%, #e04f0c 100%);
   padding-top: 18%; }
 
 #contact-section h1, #contact-section h3 {
   text-align: center;
   color: white;
-  opacity: 0.9; }
+  opacity: 0.9;
+  font-family: "Lato", sans-serif; }
 
 #contact-section h1 {
   font-size: 3em; }
 
 #contact-section h3 {
-  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.5em;
   font-weight: 300; }
 

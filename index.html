@@ -9,11 +9,12 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="assets/javascript/modernizr.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
 		<div class="hdr-stage active">
-			<div class="abtme-hdr visible hdr">About Me</div>
+			<div class="abtme-hdr visible hdr">about me</div>
 			<div class="work-hdr hdr">Works</div>
 			<div class="exp-hdr hdr">Exp.</div>
 			<div class="skill-hdr hdr">Skills</div>
@@ -27,7 +28,7 @@
 			</p>
 			<nav id="site-nav" class="site-nav">
 				<ul class="nav-options">
-				  <li><a href>Home</a></li>
+				  <li><a href>About</a></li>
 				  <li><a id="works-link">Works</a></li>
 				  <li><a href="#experience-section">Experience</a></li>
 				  <li><a href="#skill-section">Skills</a></li>
@@ -39,13 +40,7 @@
 			<div></div>
 			<section class="cd-intro">
 				<h1 class="cd-headline rotate-1">
-					<span>I create</span>
-					<span class="cd-words-wrapper">
-						<b class="is-visible">awesomely</b>
-						<b>&nbsp;&nbsp;kick-ass</b>
-						<b>&nbsp;designed</b>
-					</span>
-					<span> web and mobile apps.</span>
+					<span>I create</span><span class="cd-words-wrapper"><b class="is-visible">&nbsp;awesomely</b><b>&nbsp;&nbsp;&nbsp;&nbsp;kick-ass</b></span><span>web and mobile apps.</span>
 				</h1>
 			</section> 
 		</section>
@@ -54,9 +49,7 @@
 			<div class="col-container">
 			<div id="fader"></div>
 				<div id="col1">
-					<div id="c1" class="row1">
-						<span class="mask"></span>
-					</div>
+					<a href="#skills"><div id="c1" class="row1"></div></a>
 					<div id="c1" class="row2"></div>
 					<div id="c1" class="row3"></div>
 				</div>
@@ -75,21 +68,23 @@
 
 		<section id="experience-section" class="experience" style="height: 750px;">
 			<div class="bg-fill"></div>
-				<nav id="nav-xp" class="nav">
-					<ul>
-						<li><a class="active">Freelance</a></li>
-						<li><a>Tungsten Advertising</a></li>
-						<li><a>Machik</a></li>
-						<li><a>Bitmaker Labs</a></li>
-					</ul>
-					<span id="exp-pointer class=pos1"></span>
-				</nav>
+			<nav id="nav-xp" class="nav">
+				<ul>
+					<li><a class="link-free active">Freelance</a></li>
+					<li><a class="link-tungsten">Tungsten Advertising</a></li>
+					<li><a class="link-machik">Machik</a></li>
+					<li><a class="link-bitmaker">Bitmaker Labs</a></li>
+				</ul>
+				<span id="exp-pointer class=pos1"></span>
+			</nav>
 			<div id="xp-container">
 				<div class="xp-part xp-part-free active">
 					<div class="xp-part-banner">
 						<div></div>
 					</div>
-					<article></article>
+					<article>
+						<h1>FREELANCE</h1>
+					</article>
 				</div>
 				<div class="xp-part xp-part-tungsten hide">
 					<div class="xp-part-banner">
@@ -109,9 +104,6 @@
 					</div>
 					<article></article>
 				</div>
-				<div class="xp-part"></div>
-				<div class="xp-part"></div>
-				<div class="xp-part"></div>
 			</div>
 		</section>
 
@@ -188,14 +180,42 @@
 		        if (top > 1900){
 		        	$('.skill').addClass("animate")
 		        }
-		      });
-		      $('#site-slider').hover(function(){
-		      	$('#site-slider').toggleClass('closed')
-		      });
+		  });
 
-		      $("a").click(function(){
-		         $("a").toggleClass("active");
-		       });
+      $('#site-slider').hover(function(){
+      	$('#site-slider').toggleClass('closed')
+      });
+
+      $(".link-free, .link-tungsten, .link-bitmaker, .link-machik").click(function(){
+	      $(".link-free, .link-tungsten, .link-bitmaker, .link-machik").removeClass("active");
+	      $(this).toggleClass("active");
+
+	      if($('.link-free').hasClass('active')){
+	      	$('.xp-part-free').removeClass('hide');
+	      	$(".xp-part-free").addClass('active');
+				}else {
+					$(".xp-part-free").removeClass('active');
+				}
+				 if($('.link-tungsten').hasClass('active')){
+	      	$('.xp-part-tungsten').removeClass('hide');
+	      	$(".xp-part-tungsten").addClass('active');
+				}else {
+					$(".xp-part-tungsten").removeClass('active');
+				}
+				 if($('.link-machik').hasClass('active')){
+	      	$('.xp-part-machik').removeClass('hide');
+	      	$(".xp-part-machik").addClass('active');
+				}else {
+					$(".xp-part-machik").removeClass('active');
+				}
+				 if($('.link-bitmaker').hasClass('active')){
+	      	$('.xp-part-bitmaker').removeClass('hide');
+	      	$(".xp-part-bitmaker").addClass('active');
+				}else {
+					$(".xp-part-bitmaker").removeClass('active');
+				}
+      });
+      
 		});
 	</script>
   </body>
