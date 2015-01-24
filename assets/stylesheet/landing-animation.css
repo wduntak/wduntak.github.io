@@ -1,37 +1,39 @@
 /* Landing Animation */
 
 .cd-intro {
-  min-width: 30%;
+  min-width: 40%;
   font-family: $font-default;
   text-align: left;
 }
 
 .cd-intro {
-  margin: 15em 1em 15em;
+  margin: 30em 12em 1em 15em;
   color: rgba(50,50,50,0.8);
 }
 @media only screen and (min-width: 768px) {
   .cd-intro {
-    margin: 12em 12em 3em;
+    margin: 30em 12em 1em 24em;
   }
 }
 @media only screen and (min-width: 1170px) {
   .cd-intro {
-    margin: 15em 20em 20em 22em;
+    margin: 24em 12em 1em 28em;
   }
 }
 
 .cd-headline {
+  position: absolute;
   line-height: 1.2;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   text-align: left;
+  width: 60%;
   height: 300px;
   display: inline-block;
 }
 @media only screen and (min-width: 768px) {
   .cd-headline {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 @media only screen and (min-width: 1170px) {
