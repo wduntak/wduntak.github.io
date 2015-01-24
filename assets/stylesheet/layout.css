@@ -556,6 +556,18 @@ progress, progress[role] {
 .skill-3::-moz-progress-bar {
   background: #ff6b6b; }
 
+.skill-4::-webkit-progress-value {
+  background: #df6eff; }
+
+.skill-4::-moz-progress-bar {
+  background: #df6eff; }
+
+.skill-5::-webkit-progress-value {
+  background: #6c97ff; }
+
+.skill-5::-moz-progress-bar {
+  background: #6c97ff; }
+
 @-webkit-keyframes bar-fill {
   0% {
     width: 0; } }
