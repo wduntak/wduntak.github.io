@@ -170,7 +170,8 @@ div nav {
 
 #landing-section {
 	width: 100%;
-	height: 750px;
+	height: 780px;
+	position: relative;
 	background-color: white;
 	background-size: 100% 100%;
 }
@@ -216,7 +217,7 @@ div nav {
 	display: block;
 	right: 0;
 	left: 0;
-	bottom: 0;
+	bottom: 0px;
 	height: 70px;
 	z-index: 13;
 	font-size: 1rem;
@@ -728,6 +729,15 @@ progress, progress[role] {
 	opacity: 0.5;
 	top: 45%;
 	font-size: 0.7em;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	#landing-section #fader {
+		opacity: 0;
+	}
 }
 
 
