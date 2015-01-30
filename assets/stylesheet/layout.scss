@@ -250,23 +250,25 @@ div nav {
 	overflow: hidden;
 }
 
+#ipad-container {
+	margin: 10em 5em 10em 18%;
+	width: 60em;
+	height: 50em;
+}
+
 #about-section img:first-child {
 	position: absolute;
 	z-index: 10;
-	margin: 11% 30% 0% 15%;
-	width: 90%;
-	height: 90%;
+	width: 40%;
+	height: 40%;
+	margin-top: 7em;
 }
 
 #about-section img:nth-child(2){
 	position: relative;
 	z-index: 20;
-	margin: 5% 0% 20% 18%;
-}
-
-#about-section img{
-	width: 80%;
-	height: 80%;
+	width: 70%;
+	height: 70%;
 }
 /* Content Section */
 
@@ -756,8 +758,8 @@ and (max-device-width : 480px) {
 	position: absolute;
 	z-index: 10;
 	margin: 10% 20% 20% 42%;
-	width: 30%;
-	height: 40%;
+	width: 25%;
+	height: 35%;
 	}
 
 	#about-section img:nth-child(2){
