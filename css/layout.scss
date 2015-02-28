@@ -168,9 +168,9 @@ h1 {
 	position: relative;
 	top: 20%;
 	opacity: 0;
-	-webkit-transition: top 0.6s cubic-bezier(0.77, 0, 0.175, 1);
-	-o-transition: top 0.6s cubic-bezier(0.77, 0, 0.175, 1);
-	transition: top 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+	-webkit-transition: top 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+	-o-transition: top 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+	transition: top 0.8s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .wrapper.no-border {
@@ -185,13 +185,16 @@ h1 {
 
 .parallax-container {
   	height: 350px;
-	-webkit-transition: ease-out 0.5s;
-	-o-transition: ease-out 0.5s;
-	transition: ease-out 0.5s;
+	-webkit-transition: ease-out 0.8s;
+	-o-transition: ease-out 0.8s;
+	transition: ease-out 0.8s;
 }       
 
 .parallax-container.animate {
 	height: 900px;
+	-webkit-transition: ease-out 0.8s;
+	-o-transition: ease-out 0.8s;
+	transition: ease-out 0.8s;
 }
 
 .wrapper.animate {

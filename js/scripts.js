@@ -25,7 +25,9 @@ $(document).ready(function(){
 	        "width": Number((scrollPercentage).toFixed(2)) + "%"
 	    }, 500, 'easeInOutSine');
 	});
-
+	function animateWrapper() {
+		$('.wrapper').addClass('animate');
+	}
 	setTimeout(function() {
 	    $('.start-nav').addClass('fixed');
 	    $(window).scroll()
@@ -33,7 +35,7 @@ $(document).ready(function(){
 
 	setTimeout(function() {
 	    $('.parallax-container').removeClass('animate');
-	    $('.wrapper').addClass('animate');
+	    animateWrapper();
 	}, 2800);
 
 	$('.contact-icons').hover(function(){
