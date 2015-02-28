@@ -34,7 +34,7 @@ $(document).ready(function(){
 	setTimeout(function() {
 	    $('.parallax-container').removeClass('animate');
 	    $('.wrapper').addClass('animate');
-	}, 3000);
+	}, 2800);
 
 	$('.contact-icons').hover(function(){
 		$(this).toggleClass('active')
