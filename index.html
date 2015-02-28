@@ -1,302 +1,382 @@
-<!DOCTYPE html>
-<html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+      <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+      <link rel="stylesheet" type="text/css" href="css/hover_effect.css" />
+      <link rel="stylesheet" type="text/css" href="css/component.css" />
+      <link rel="stylesheet" type="text/css" href="css/animate.css" />
+      <link rel="stylesheet" type="text/css" href="css/layout.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600|Roboto:400,300,100,500,700|Alegreya:400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" type="text/css" href="font/font-awesome-4.2.0/css/font-awesome.min.css" />
 
-	<head>
-		<link rel="stylesheet" href="assets/stylesheet/animate.css">
-		<link rel="stylesheet" type="text/css" href="assets/stylesheet/normalize.css">
-		<link rel="stylesheet" type="text/css" href="assets/stylesheet/layout.css">
-		<link rel="stylesheet" type="text/css" href="assets/stylesheet/landing-animation.css">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="assets/javascript/modernizr.js"></script>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-	</head>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+      <title>Wangdu Duntak | Front-End Developer</title>
+    </head>
 
-	<body>
-		<div class="hdr-stage">
-			<div class="work-hdr hdr">Works</div>
-			<div class="exp-hdr hdr">Exp.</div>
-			<div class="skill-hdr hdr">Skills</div>
-			<div class="contact-hdr hdr">Contacts</div>
-		</div>
-		<header id="site-slider" class="site-slider closed">	
-			<p id="main-logo" class="main-logo">
-				<a href="index.html">
-					<img src="assets/images/logo.svg">
-				</a>
-			</p>
-			<nav id="site-nav" class="site-nav">
-				<ul class="nav-options">
-				  <li><a href="#about-section">About</a></li>
-				  <li><a href="#content-section">Works</a></li>
-				  <li><a href="#experience-section">Experience</a></li>
-				  <li><a href="#skill-section">Skills</a></li>
-				  <li><a href="#contact-section">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-		<section id="landing-section" class="landing-section">
-			<div id="fader"></div>
-			<section class="cd-intro">
-				<h1 class="cd-headline rotate-1">
-					<span class="set-txt">I create web and mobile apps that are</span><span class="cd-words-wrapper"><b class="is-visible">&nbsp;responsive.</b><b>&nbsp;well-designed.</b><b>&nbsp;kick-ass!</b></span>
-				</h1>
-			</section> 
-			<a class="continue-scroll"><span>Learn More</span></a>
-		</section>
-		<section id="about-section">
-			<div id="about-container">
-				<div id="ipad-container">
-					<img src="assets/svg/vector_me.svg">
-					<img src="assets/svg/ipad.svg">
-				</div>
-			</div>
-		</section>
-		<section id="content-section" class="content-section">
-			<div class="col-container">
-			<div id="fader"></div>
-				<div id="col1">
-					<a href="https://www.behance.net/wduntak"><div id="c1" class="row1"></div></a>
-					<a href="https://www.behance.net/wduntak"><div id="c1" class="row2"></div></a>
-					<a href="https://www.behance.net/wduntak"><div id="c1" class="row3"></div></a>
-				</div>
-				<div id="col2">
-					<a href="http://www.popr.ca"><div id="c2" class="row1"></div></a>
-					<a href="https://www.behance.net/wduntak"><div id="c2" class="row2"></div></a>
-					<a href="http://www.github.com/wduntak"><div id="c2" class="row3"></div></a>
-				</div>
-				<div id="col3">
-					<a href="http://www.github.com/wduntak"><div id="c3" class="row1"></div></a>
-					<a href="http://www.github.com/wduntak"><div id="c3" class="row2"></div></a>
-					<a href="https://www.behance.net/wduntak"><div id="c3" class="row3"></div></a>
-				</div>
-			</div>
-		</section>
+    <body>
+    <div class="loader" id="loading">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         width="60px" height="80px" viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+        <rect x="0" y="10" width="4" height="10" fill="#333" opacity="0.6">
+          <animate attributeName="opacity" attributeType="XML" values="0.6; 1; .2" begin="0s" dur="0.6s" repeatCount="indefinite" />
+          <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0s" dur="0.6s" repeatCount="indefinite" />
+          <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0s" dur="0.6s" repeatCount="indefinite" />
+        </rect>
+        <rect x="8" y="10" width="4" height="10" fill="#333"  opacity="0.6">
+          <animate attributeName="opacity" attributeType="XML" values="0.6; 1; .2" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+          <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+          <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0.15s" dur="0.6s" repeatCount="indefinite" />
+        </rect>
+        <rect x="16" y="10" width="4" height="10" fill="#333"  opacity="0.6">
+          <animate attributeName="opacity" attributeType="XML" values="0.6; 1; .2" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+          <animate attributeName="height" attributeType="XML" values="10; 20; 10" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+          <animate attributeName="y" attributeType="XML" values="10; 5; 10" begin="0.3s" dur="0.6s" repeatCount="indefinite" />
+        </rect>
+      </svg>
+    </div>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+      <script type="text/javascript" src="js/bin/materialize.min.js"></script>
+      <script type="text/javascript" src="js/scripts.js"></script>
+      <script src="js/modernizr.custom.js"></script>
+      <header>
+        <div class="navbar-fixed hide-on-med-and-up">
+          <nav class="hide-on-med-and-up">
+            <div class="nav-wrapper">
+              <div class="col s12">
+                <a href="#" data-activates="mobile-demo" class="right button-collapse"><i class="mdi-navigation-menu top-menu"></i></a>
+                <ul class="side-nav" id="mobile-demo">
+                  <embed type="image/svg+xml" src="img/svg/logo.svg" class="logo-small"/>
+                  <li><a href="#about">About</i></a></li>
+                  <li><a href="#work">Works</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="progress hide-on-med-and-up">  
+          <div class="determinate" style=""></div>
+        </div>
+        <ul id="slide-out" class="side-nav start-nav">
+          <embed type="image/svg+xml" src="img/svg/logo.svg" class="logo"/>
+          <li class="side-list side-about">
+            <a href="#about" class="page-links">
+              <span>About<span>
+              <div></div><embed type="image/svg+xml" src="img/svg/space1.svg" class="space-icon"/><div></div>
+              <p>The Nature of All Things Me</p>
+            </a>
+          </li>
+          <li class="side-list side-work">
+            <a href="#work" class="page-links">
+              <span>Works</span>
+              <div></div><embed type="image/svg+xml" src="img/svg/space2.svg" class="space-icon"/><div></div>
+              <p>A Collection of Awesome Things</p>
+            </a>
+          </li>
+          <li class="side-list side-experience">
+            <a href="#experience" class="page-links">
+              <span>Experience</span>
+              <div></div><embed type="image/svg+xml" src="img/svg/space4.svg" class="space-icon"/><div></div>
+              <p>Knowledge is Power</p>
+            </a>
+          </li>
+          <li class="side-list side-contact">
+            <a href="#contact" class="page-links">
+              <span>Contact</span>
+              <div></div><embed type="image/svg+xml" src="img/svg/space3.svg" class="space-icon"/><div></div>
+              <p>Open for business 24/7</p>
+            </a>
+          </li>
+        </ul>
+      </header>
+      <div class="parallax-container animate">
+       <div class="parallax"><img src="img/svg/bg.svg"></div>
+      </div>
+      <div class="wrapper">
+        <div class="menu-toggle hide-on-med-and-down">
+          <div class="menu-wrapper hide-on-med-and-down">
+            <button class="hamburger">Menu</button>
+          </div>
+        </div>
+        <div class="container section">
+          <div class="row">
+            <section id="about" class="scrollspy">
+              <div class="col s12 m10">
+                <h1 class="header">
+                  <span>Wangdu Duntak</span>
+                  <span class="subtitle byline">A Front-End Developer, that loves what he does</span>
+                  <span class="subtitle">While Working to Change the Web by Design.</span>
+                </h1>
+              </div>
+              <div class="col s12 m10">
+                <p>
+                   Hi, my name is Wangdu Duntak and I am passionate about creating awesome web applications with emphasis on thoughtful designs. I'm the kind of person that will obsess over the placement of each and every pixel layed out across a page. I am a believer in creating intriguing and enhanced user interactions. As we see more and more mobile users, prototyping websites that are responsive and functional across browsers is something I truly believe is imperative.  
+                </p>
+                <p>
+                  I am a recent alumni of Bitmakers Lab, which is an immersive program in web development focusing on building applications using Ruby on Rails. The program taught me to emphasize best practices of writing code such as understanding architectural patterns like MVC, CRUD and RESTful APIs. 
+                </p>
+                <p>
+                  I am always looking to expand my learning by exploring new frameworks and packages that will help me build the setup the best stacks for my projects. Recently, I have been adventuring in the world of MeteorJS and concurrently MongoDB to launch reactive apps.
+                </p>
+                <p>
+                  Currently, I reside in Toronto, Canada. I am looking for opportunities for full-time employment but at the same time, I am open to accepting contract work.  
+                </p>
+              </div>
+              <div class="col s12 m2">
+                <div class="contact-icons">
+                  <a href="https://github.com/wduntak">
+                    <embed type="image/svg+xml" src="img/svg/github.svg" class="contact-github"/>
+                    <p>GITHUB</p>
+                  </a>
+                </div>
+                <div class="contact-icons">
+                  <a href="#">
+                    <embed type="image/svg+xml" src="img/svg/resume.svg" class="contact-resume"/>
+                    <p>RESUME</p>
+                  </a>
+                </div>
+                <div class="contact-icons">
+                  <a href="#">
+                    <embed type="image/svg+xml" src="img/svg/linkedin.svg" class="contact-linkedin"/>
+                    <p>LINKEDIN</p>
+                  </a>
+                </div>
+              </div>
+            </section>
+            </div>
+          </div>
+        </div>
+        <div class="parallax-container hide-on-med-and-down">
+          <div class="parallax hide-on-med-and-down"><img src="img/works.jpeg"></div>
+        </div>
+        <div class="wrapper no-border">
+          <div class="container section">
+            <div class="row">
 
-		<section id="experience-section" class="experience" style="height: 790px;">
-			<div class="bg-fill"></div>
-			<nav id="nav-xp" class="nav">
-				<ul>
-					<li><a class="link-free active">Freelance</a></li>
-					<li><a class="link-tungsten">Tungsten Advertising</a></li>
-					<li><a class="link-machik">Machik</a></li>
-					<li><a class="link-bitmaker">Bitmaker Labs</a></li>
-				</ul>
-				<div id="exp-pointer" class="pos1"></div>
-			</nav>
-			<div id="xp-container">
-				<div class="xp-part xp-part-free active">
-					<div class="xp-part-banner">
-						<div></div>
-					</div>
-					<article>
-						<h1>FREELANCE</h1>
-						<p id="exp-date">November, 2012 - Present</p>
-						<h2>Graphic Designer</h2>
-						<p>Created a creative design agency, TAK Creative, to fulfill freelance work for clients ranging from businesses, non-profit-organization and associations:</p>
-						<ul>
-							<li>Logo Designs</li>
-							<li>Brand Development</li>
-							<li>Advertising</li>
-						</ul>
-					</article>
-				</div>
-				<div class="xp-part xp-part-tungsten hide">
-					<div class="xp-part-banner">
-						<div></div>
-					</div>
-					<article>
-						<h1>TUNGSTEN</h1>
-						<p id="exp-date">August, 2013 - Present</p>
-						<h2>Web and Graphic Designer</h2>
-						<p>Contribute consultancy and creation of web and graphic designs for advertising agency while working with guidelines provided from clients:</p>
-						<ul>
-							<li>Web and Graphic Designs Mock-ups</li>
-							<li>Brand Development</li>
-							<li>Advertising</li>
-						</ul>
-					</article>
-				</div>
-				<div class="xp-part xp-part-machik hide">
-					<div class="xp-part-banner">
-						<div></div>
-						<p></p>
-					</div>
-					<article>
-						<h1>MACHIK</h1>
-						<p id="exp-date">December, 2013 - August, 2013</p>
-						<h2>Graphic Designer</h2>
-						<p>Volunteered time in creating web graphics and concepts for organizations campaigns:</p>
-						<ul>
-							<li>Illustrator/Photoshop/Indesign</li>
-							<li>Campaigns</li>
-							<li>Brand Strategy</li>
-						</ul>
-					</article>
-				</div>
-				<div class="xp-part xp-part-bitmaker hide">
-					<div class="xp-part-banner">
-						<div></div>
-					</div>
-					<article>
-						<h1>BITMAKER</h1>
-						<p id="exp-date">October, 2013 - December, 2013</p>
-						<h2>Web Development</h2>
-						<p>Studied at a 9-week immersive web development program focused on full-stack development:</p>
-						<ul>
-							<li>Ruby on Rails</li>
-							<li>Javascript/JQuery</li>
-							<li>AJAX</li>
-							<li>HTML/CSS</li>
-							<li>Test-Driven Development</li>
-							<li>Git</li>
-						</ul>
-					</article>
-				</div>
-			</div>
-		</section>
-
-		<section id="skill-section" class="skill-section">		
-			<ul class="skill-list">
-			  <li class="skill">
-			    <h3 id="skill-title">HTML5 & CSS3</h3>
-			    <progress class="skill-1" max="100" value="90">
-			    </progress>
-			  </li>
-			  <li class="skill">
-			    <h3 id="skill-title">JAVASCRIPT & JQUERY</h3>
-			    <progress class="skill-2" max="100" value="75">
-			    </progress>
-			  </li>
-			  <li class="skill">
-			    <h3 id="skill-title">RUBY ON RAILS</h3>
-			    <progress class="skill-3" max="100" value="80">
-			    </progress>
-			  </li>
-			  <li class="skill">
-			    <h3 id="skill-title">GIT & GITHUB</h3>
-			    <progress class="skill-4" max="100" value="75">
-			    </progress>
-			  </li>
-			  <li class="skill">
-			    <h3 id="skill-title">AJAX</h3>
-			    <progress class="skill-5" max="100" value="70">
-			    </progress>
-			  </li>
-			</ul>
-		</section>
-
-		<section id="contact-section" class="contact-section">
-			<h1>CONTACT</h1>
-			<h3>wduntak@gmail.com</h3>
-			<center>
-				<ul class="contact-icons">
-					<li><a href="https://github.com/wduntak"><img src="assets/images/github.svg"/></a></li>
-					<li><a href="https://twitter.com/wduntak"><img src="assets/images/twitter.svg"/></a></li>
-					<li><a href="https://www.linkedin.com/profile/view?id=384163600&trk=nav_responsive_tab_profile"><img src="assets/images/linkedin.svg"/></a></li>
-					<li><a href="https://www.behance.net/wduntak"><img src="assets/images/behance.svg"/></a></li>
-				</ul>
-			</center>
-			<p class="copyright">Copyright &copy; 2015 - Wangdu Duntak</p>
-		</section>
-
-	<script src="assets/javascript/scroll.js"></script>
-	<script src="assets/javascript/animation-header.js"></script>
-	<script>
-		$(document).ready(function(){
-
-			$(".continue-scroll").click(function() {
-  			$('html, body').animate({
-      		scrollTop: $("#about-section").offset().top
- 			 	}, 1200);
-			});
-			
-			$('#works-link').click(function() {
-  			$(document).scrollTo($('#content-section'), 500);
-			});
-
-			$('.link-free').click(function(){
-				$('#exp-pointer').removeClass('pos1 pos2 pos3 pos4');
-				$('#exp-pointer').addClass('pos1');
-			});
-			$('.link-tungsten').click(function(){
-				$('#exp-pointer').removeClass('pos1 pos2 pos3 pos4');
-				$('#exp-pointer').addClass('pos2');
-			});
-			$('.link-machik').click(function(){
-				$('#exp-pointer').removeClass('pos1 pos2 pos3 pos4');
-				$('#exp-pointer').addClass('pos3');
-			});
-			$('.link-bitmaker').click(function(){
-				$('#exp-pointer').removeClass('pos1 pos2 pos3 pos4');
-				$('#exp-pointer').addClass('pos4');
-			});
-						
-
-			$(document).scroll(function() {
-				var top = $(document).scrollTop();
-		        if (top < 2100) {
-		        	$('.experience').removeClass("active")
-		        	$('.xp-part').removeClass("active")
-		        }
-		        if (top > 2300) {
-		        	$('.experience').addClass("active")
-		        	$('.xp-part-free').addClass("active")
-		        }
-		        if (top > 2700){
-		        	$('.experience').removeClass("active")
-		        	$('.xp-part').removeClass("active")    
-		        }      
-		        if (top > 3300){
-		        	$('.skill').addClass("animate")
-		        }
-		  });
-
-      $('#site-slider').hover(function(){
-      	$('#site-slider').toggleClass('closed')
-      });
-
-      $(".link-free, .link-tungsten, .link-bitmaker, .link-machik").click(function(){
-	      $(".link-free, .link-tungsten, .link-bitmaker, .link-machik").removeClass("active");
-	      $(this).toggleClass("active");
-
-	      if($('.link-free').hasClass('active')){
-	      	$('.xp-part-free').removeClass('hide');
-	      	$(".xp-part-free").addClass('active');
-				}else {
-					$(".xp-part-free").removeClass('active');
-				}
-				 if($('.link-tungsten').hasClass('active')){
-	      	$('.xp-part-tungsten').removeClass('hide');
-	      	$(".xp-part-tungsten").addClass('active');
-				}else {
-					$(".xp-part-tungsten").removeClass('active');
-				}
-				 if($('.link-machik').hasClass('active')){
-	      	$('.xp-part-machik').removeClass('hide');
-	      	$(".xp-part-machik").addClass('active');
-				}else {
-					$(".xp-part-machik").removeClass('active');
-				}
-				 if($('.link-bitmaker').hasClass('active')){
-	      	$('.xp-part-bitmaker').removeClass('hide');
-	      	$(".xp-part-bitmaker").addClass('active');
-				}else {
-					$(".xp-part-bitmaker").removeClass('active');
-				}
-      });
-      
-		});
-	</script>
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-58881133-1', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
-  </body>
-</html>
+            <section id="work" class="scrollspy">
+              <h1 class="header">
+                <span>Works</span>
+                <span class="subtitle byline">A Showcase of Design, Development, Experiments and More</span>
+              </h1>
+                <div class="grid-container">
+                  <div id="grid" data-columns="3">
+                      <!-- First Column -->
+                      <div class="column">
+                        <div class="item small">
+                           <figure>
+                               <img src="img/1.jpg" alt="">
+                               <figcaption>
+                                   <p>APP DEVELOPMENT</p>
+                                   <a href=""></a>
+                               </figcaption>
+                           </figure>
+                        </div>
+                        <div class="item">
+                           <figure>
+                               <img src="img/2.jpg" alt="">
+                               <figcaption>
+                                   <p>POSTER DESIGN</p>
+                                   <a href=""></a>
+                               </figcaption>
+                           </figure>
+                        </div>
+                        <div class="item">
+                           <figure>
+                               <img src="img/5.jpg" alt="">
+                               <figcaption>
+                                   <p>APP DEVELOPMENT</p>
+                                   <a href=""></a>
+                               </figcaption>
+                           </figure>
+                        </div>
+                        <div class="item">
+                          <figure>
+                           <img src="img/8x.jpg" alt="">
+                           <figcaption>
+                              <p>POSTER DESIGN</p>
+                              <a href=""></a>
+                           </figcaption>
+                          </figure>
+                        </div>
+                      </div>
+                      <!-- Second Column-->
+                      <div class="column">
+                       <div class="item">       
+                        <figure>
+                         <img src="img/4x.jpg" alt="">
+                         <figcaption>
+                             <p>POSTER DESIGN</p>
+                             <a href=""></a>
+                         </figcaption>
+                        </figure>
+                       </div>
+                       <div class="item">
+                        <figure>
+                         <img src="img/7.jpg" alt="">
+                         <figcaption>
+                             <p>LOGO DESIGN</p>
+                             <a href=""></a>
+                         </figcaption>
+                        </figure>
+                       </div>
+                      <div class="item small">
+                       <figure>
+                         <img src="img/9.jpg" alt="">
+                         <figcaption>
+                             <p>LOGO DESIGN</p>
+                             <a href=""></a>
+                         </figcaption>
+                       </figure>
+                      </div>
+                      <div class="item small">
+                       <figure>
+                         <img src="img/1.jpg" alt="">
+                         <figcaption>
+                           <p>APP DEVELOPMENT</p>
+                           <a href=""></a>
+                         </figcaption>
+                       </figure>
+                      </div>
+                      </div>
+                      <!-- Third Column -->
+                      <div class="column">
+                         <div class="item">
+                            <figure>
+                           <img src="img/3.jpg" alt="">
+                           <figcaption>
+                               <p>APP DEVELOPMENT</p>
+                               <a href="http://www.popr.ca"></a>
+                           </figcaption>
+                          </figure>
+                         </div>
+                         <div class="item">
+                            <figure>
+                           <img src="img/6x.jpg" alt="">
+                           <figcaption>
+                               <p>APP DEVELOPMENT</p>
+                               <a href=""></a>
+                           </figcaption>
+                          </figure>
+                         </div>
+                         <div class="item small">
+                           <figure>
+                               <img src="img/1.jpg" alt="">
+                               <figcaption>
+                                   <p>APP DEVELOPMENT</p>
+                                   <a href=""></a>
+                               </figcaption>
+                           </figure>
+                        </div>
+                        <div class="item small">
+                           <figure>
+                               <img src="img/1.jpg" alt="">
+                               <figcaption>
+                                   <p>APP DEVELOPMENT</p>
+                                   <a href=""></a>
+                               </figcaption>
+                           </figure>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="parallax-container hide-on-med-and-down">
+        <div class="parallax hide-on-med-and-down"><img src="img/sky.jpg"></div>
+      </div>
+      <div class="wrapper no-border">
+        <div class="container exp-container section">
+          <div class="row">
+            <section id="experience" class="scrollspy">
+              <div class="col s12 m12">
+                <h1 class="header">
+                  <span>Experience</span>
+                  <span class="subtitle byline">My Journey as a Developer</span>
+                </h1>
+              </div>
+              <div class="col s12 m12">
+                <ul class="cbp_tmtimeline">
+                  <li>
+                    <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>Present</span> <span>2015</span></time>
+                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                    <div class="cbp_tmlabel">
+                      <h2>Freelance</h2>
+                      <p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape radish bush tomato ricebean black-eyed pea maize eggplant. Cabbage lentil cucumber chickpea sorrel gram garbanzo plantain lotus root bok choy squash cress potato summer purslane salsify fennel horseradish dulse. Winter purslane garbanzo artichoke broccoli lentil corn okra silver beet celery quandong. Plantain salad beetroot bunya nuts black-eyed pea collard greens radish water spinach gourd chicory prairie turnip avocado sierra leone bologi.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <time class="cbp_tmtime" datetime="2013-04-11T12:04"><span>February</span> <span>2015</span></time>
+                    <div class="cbp_tmicon cbp_tmicon-screen"></div>
+                    <div class="cbp_tmlabel">
+                      <h2>Tungsten Advertising</h2>
+                      <p>Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <time class="cbp_tmtime" datetime="2013-04-13 05:36"><span>December</span> <span>2013</span></time>
+                    <div class="cbp_tmicon cbp_tmicon-mail"></div>
+                    <div class="cbp_tmlabel">
+                      <h2>Machik</h2>
+                      <p>Parsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard. Avocado tomato peanut soko amaranth grape fennel chickweed mung bean soybean endive squash beet greens carrot chicory green bean. Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <time class="cbp_tmtime" datetime="2013-04-15 13:15"><span>December</span> <span>2014</span></time>
+                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                    <div class="cbp_tmlabel">
+                      <h2>Bitmakers Lab</h2>
+                      <p>Peanut gourd nori welsh onion rock melon mustard jícama. Desert raisin amaranth kombu aubergine kale seakale brussels sprout pea. Black-eyed pea celtuce bamboo shoot salad kohlrabi leek squash prairie turnip catsear rock melon chard taro broccoli turnip greens. Fennel quandong potato watercress ricebean swiss chard garbanzo. Endive daikon brussels sprout lotus root silver beet epazote melon shallot.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="parallax-container hide-on-med-and-down">
+        <div class="parallax hide-on-med-and-down"><img src="img/sea.jpg"></div>
+      </div>
+        <div class="wrapper no-border">
+          <div class="container section">
+            <div class="row">
+            <section id="contact" class="scrollspy">
+              <h1 class="header">
+                <span>Contact</span>
+                <span class="subtitle byline">Available for full-time work or contract jobs, Let's Connect!</span>
+              </h1>
+              <div class="col s12 m12">
+                <p>
+                Lorem ipsum dolor sit amet, porro inermis duo ea. Et homero probatus vim, eos probatus sensibus cu. Ad eam dicunt voluptua, quidam intellegam ea sea. Ius iriure liberavisse suscipiantur ei, ei labore meliore accumsan nec. At est legere percipitur.
+                </p>
+                <p>
+                Pri dolore delectus perpetua ne. Liber mandamus duo te. Te alia conceptam has, te eum choro phaedrum. Te vim prima expetenda dignissim. Dolores omnesque eos ei. Mutat timeam conclusionemque usu eu, pro odio delenit eu.
+                </p>
+                <p>
+                Mucius euripidis ex sea, cu regione aperiri vis. Agam quando nominavi ei vis, fugit libris iuvaret nam te. An veritus delicata usu, aeterno corpora in per. Mel augue cetero vivendum in, ut vel etiam tractatos salutandi.
+                </p>
+                <p>
+                Cu volutpat maiestatis interpretaris ius, at mei dicit nostrud, ullum dicunt cotidieque et sit. In pro simul luptatum honestatis, ne has nisl inimicus, ex quo errem altera disputationi. Vis ne dolorem sadipscing, sit salutatus vituperatoribus ea. No legere torquatos sit, no adhuc officiis abhorreant nam. Tractatos signiferumque an mei, alia saepe constituto id eum. Te viderer delenit mei, cu facete appellantur duo. Vidit homero reprehendunt eu est.
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+        <div class="parallax-container">
+          <div class="parallax"><img src="img/svg/bg.svg"></div>
+        </div>
+        <script src="js/grid.js"></script>
+        <script>
+          $(function() {
+            Grid.init();
+          });
+        </script>
+    </body>
+  </html>
