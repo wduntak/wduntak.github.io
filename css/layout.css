@@ -569,10 +569,13 @@ h1 {
   color: #fff;
   padding: 2em;
   font-size: 1.0em;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.4;
   position: relative;
   border-radius: 5px; }
+
+.cbp_tmlabel p {
+  font-family: "Open Sans", sans-serif; }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
   background: #F7C11E; }

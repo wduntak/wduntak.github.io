@@ -25,9 +25,11 @@ $(document).ready(function(){
 	        "width": Number((scrollPercentage).toFixed(2)) + "%"
 	    }, 500, 'easeInOutSine');
 	});
+
 	function animateWrapper() {
 		$('.wrapper').addClass('animate');
 	}
+	
 	setTimeout(function() {
 	    $('.start-nav').addClass('fixed');
 	    $(window).scroll()
@@ -74,7 +76,7 @@ $(document).ready(function(){
 		    }
 	});
 
-//SVG ANIMATION
+//MENU
 	$(".hamburger").click(function(){
     	$(this).toggleClass("active-menu");
     	$('.start-nav').toggleClass('fixed');
