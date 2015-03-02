@@ -166,7 +166,9 @@ h1 {
   background-image: url("../img/website_scene5.png"); }
 
 #block1.dead {
-  background-image: url("../img/website_scene2.png"); }
+  background-image: url("../img/website_scene2.png");
+  width: 500px;
+  height: 500px; }
 
 .rotate-icon {
   width: 50%;
