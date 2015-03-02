@@ -6,13 +6,13 @@ $(function(){
 
 	//Create the Scene and trigger when visiblewith ScrollMagic
 	new ScrollMagic.Scene({triggerElement: "#work", duration: 1000, offset: 700})
-		.setTween(TweenMax.to("#block1", 6, {top: "+=2800", width:"300", height: "300"}))
+		.setTween(TweenMax.to("#block1", 6, {top: "+=2800", width:"400", height: "400", left:"22%"}))
 		.setClassToggle("#block1", "parachute")
-		.addIndicators()
+		// .addIndicators()
 		.addTo(controller);
 
 	new ScrollMagic.Scene({triggerElement: "#experience", duration: 1000})
-		.setTween(TweenMax.to('#block1', 4, {top: "+=900", width: "300", height: "300"}))
+		.setTween(TweenMax.to('#block1', 4, {top: "+=900", width: "300", height: "300", left: "24.5%"}))
 		.setClassToggle("#block1", "parachute")
 		.on("progress", function(event){
 			console.log("Progress =" + event.progress)
@@ -20,7 +20,7 @@ $(function(){
 				$("#block1").addClass("bar");
 			};
 		})
-		.addIndicators()
+		// .addIndicators()
 		.addTo(controller);
 
 	new ScrollMagic.Scene({
@@ -38,7 +38,7 @@ $(function(){
 	})
 	.setTween(TweenMax.to('#block1', 3, {top: "+=1800", width: "300", height: "300", rotation: 360}))
 	.setClassToggle("#block1", "drop")
-	.addIndicators()
+	// .addIndicators()
 	.on("progress", function(event){
 		if(event.progress === 1) {
 			$("#block1").toggleClass('dead');
