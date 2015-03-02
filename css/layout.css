@@ -145,6 +145,20 @@ h1 {
 .wrapper.no-border {
   border: none; }
 
+/* Animation */
+#block1 {
+  top: 32%;
+  left: 23%;
+  position: absolute;
+  z-index: 1000;
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/website_scene1.png");
+  background-size: contain; }
+
+#block1.anime {
+  background-color: red; }
+
 .rotate-icon {
   width: 50%;
   height: 50%;
