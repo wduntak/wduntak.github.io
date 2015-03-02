@@ -2,43 +2,49 @@ var controller;
 
 $(function(){
 	//Initialize Controller
-	controller = new ScrollMagic();
+	controller = new ScrollMagic.Controller();
 
 	//Create the Scene and trigger when visiblewith ScrollMagic
-	new ScrollScene({
-		triggerElement: "#work",
-		duration: 1000,
-		offset: 700
-	})
-	.setTween(TweenMax.to('#block1', 6, {top: "+=2800", width:"200", height: "200"}))
-	.addTo(controller)
-	.addIndicators();
+	new ScrollMagic.Scene({triggerElement: "#work", duration: 1000, offset: 700})
+		.setTween(TweenMax.to("#block1", 6, {top: "+=2800", width:"300", height: "300"}))
+		.setClassToggle("#block1", "parachute")
+		.addIndicators()
+		.addTo(controller);
 
-	var experienceScene = new ScrollScene({
+	new ScrollMagic.Scene({triggerElement: "#experience", duration: 1000})
+		.setTween(TweenMax.to('#block1', 4, {top: "+=900", width: "300", height: "300"}))
+		.setClassToggle("#block1", "parachute")
+		.on("progress", function(event){
+			console.log("Progress =" + event.progress)
+			if(event.progress == 1) {
+				$("#block1").addClass("bar");
+			};
+		})
+		.addIndicators()
+		.addTo(controller);
+
+	new ScrollMagic.Scene({
 		triggerElement: "#experience",
-		duration: 1000,
-		offset: 100
+		offset: 100,
+		duration: 900
 	})
-	.setTween(TweenMax.to('#block1', 5, {top: "+=900", width: "200", height: "200"}))
-	.addTo(controller)
-	.addIndicators();
+	.setClassToggle("#block1", "bar")
+	.addTo(controller);
 
-	// experienceScene.setClassToggle("#block1", "anime")
-
-	// new ScrollScene({
-	// 	triggerElement: "#experience",
-	// 	offset: 150,
-	// 	duration: 1000
-	// })
-	// .setClassToggle("#block1", "anime")
-	// .addTo(controller);
-
-	new ScrollScene({
+	new ScrollMagic.Scene({
 		triggerElement: "#contact",
 		duration: 600,
 		offset: -550
 	})
-	.setTween(TweenMax.to('#block1', 3, {top: "+=1800", width: "200", height: "200"}))
-	.addTo(controller)
-	.addIndicators();
+	.setTween(TweenMax.to('#block1', 3, {top: "+=1800", width: "300", height: "300", rotation: 360}))
+	.setClassToggle("#block1", "drop")
+	.addIndicators()
+	.on("progress", function(event){
+		if(event.progress === 1) {
+			$("#block1").toggleClass('dead');
+		} else {
+			$("#block1").removeClass('dead')
+		}
+	})
+	.addTo(controller);
 });

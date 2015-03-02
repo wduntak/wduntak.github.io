@@ -183,7 +183,7 @@ h1 {
 
 #block1 {
 	top: 32%;
-	left: 23%;
+	left: 24.5%;
 	position: absolute;
 	z-index: 1000;
 	width: 200px;
@@ -192,8 +192,20 @@ h1 {
 	background-size: contain;
 }
 
-#block1.anime {
-	background-color: red;
+#block1.parachute {
+	background-image: url('../img/website_scene3.png')
+}
+
+#block1.bar {
+	background-image: url('../img/website_scene4.png');
+}
+
+#block1.drop {
+	background-image: url('../img/website_scene5.png');
+}
+
+#block1.dead {
+	background-image: url('../img/website_scene2.png');
 }
 
 .rotate-icon {
