@@ -15,7 +15,6 @@ $(function(){
 		.setTween(TweenMax.to('#block1', 4, {top: "+=900", width: "300", height: "300", left: "24.5%"}))
 		.setClassToggle("#block1", "parachute")
 		.on("progress", function(event){
-			console.log("Progress =" + event.progress)
 			if(event.progress == 1) {
 				$("#block1").addClass("bar");
 			};
