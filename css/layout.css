@@ -176,6 +176,7 @@ h1 {
   position: absolute; }
 
 .parallax-container {
+  background-color: orange;
   height: 350px;
   -webkit-transition: ease-out 0.8s;
   -o-transition: ease-out 0.8s;
