@@ -1,8 +1,8 @@
-$(window).load(function() {
-    setTimeout(function(){
-		$('#loading').hide();
-    }, 3000); 
-});
+// $(window).load(function() {
+//     setTimeout(function(){
+// 		$('#loading').hide();
+//     }, 3000); 
+// });
 
 $(document).ready(function(){
 	$(".button-collapse").sideNav();
