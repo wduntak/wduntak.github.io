@@ -1,8 +1,7 @@
 $(window).load(function() {
-	$('#loading').hide();
-  //   setTimeout(function(){
-		// $('#loading').hide();
-  //   }, 3000); 
+    setTimeout(function(){
+			$('#loading').hide();
+    }, 3000); 
 });
 
 $(document).ready(function(){
