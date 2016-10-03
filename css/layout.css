@@ -38,13 +38,13 @@ p {
   background-size: cover;
 }
 .parallax-1 {
-  background-image: url('../img/bg1.jpg');
+  background-image: url('https://raw.githubusercontent.com/wduntak/wduntak.github.io/master/img/bg1.jpg');
 }
 .parallax-2 {
-  background-image: url('../img/bg2.jpg');
+  background-image: url('https://raw.githubusercontent.com/wduntak/wduntak.github.io/master/img/bg12.jpg');
 }
 .parallax-3 {
-  background-image: url('../img/bg3.jpg');
+  background-image: url('https://raw.githubusercontent.com/wduntak/wduntak.github.io/master/img/bg3.jpg');
 }
 /* Set the color of the icon */
 svg path,
