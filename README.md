@@ -1,16 +1,5 @@
-# Grid Menu
-
-A CSS Grid powered menu with a box look inspired by the effect seen in the [Ableton Live 10: What's New](https://www.youtube.com/watch?v=Z9Ku5ptjzKw) video.
-
-![Grid Menu](https://tympanus.net/codrops/wp-content/uploads/2018/03/GridMenu_featured.jpg)
-
-[Article on Codrops](https://tympanus.net/codrops/?p=34419)
-
-[Demo](http://tympanus.net/Development/GridMenu/)
-
 ## Credits
 
-- Images by [Unsplash.com](http://unsplash.com)
 - [anime.js](http://anime-js.com/) by Julian Garnier
 - [imagesLoaded](http://imagesloaded.desandro.com/) by Dave DeSandro
 
