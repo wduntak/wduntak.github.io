@@ -102,6 +102,17 @@ button:focus {
 	text-transform: lowercase;
 	font-size: 1.35rem;
 	margin: 0;
+	position: relative;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    width: 75px;
+    height: 3px;
+    bottom: 30px;
+    right: 0px;
+    background: #000;
 }
 
 .menu {
