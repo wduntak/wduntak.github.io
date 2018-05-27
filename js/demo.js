@@ -9,7 +9,6 @@
  * http://www.codrops.com
  */
 {
-	console.log("Initialize demo.js");
 	setTimeout(() => document.body.classList.add('render'), 60);
 	// const navdemos = Array.from(document.querySelectorAll('nav.demos > .demo'));
 	// const total = navdemos.length;

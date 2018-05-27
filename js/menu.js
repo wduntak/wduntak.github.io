@@ -102,7 +102,6 @@
 					link.addEventListener('click', (ev) => {
 						ev.preventDefault();
 						if ( this.isAnimating ) return;
-						console.log("href", link.getAttribute('href'));
 						document.querySelector('.content--switch-current').classList.remove('content--switch-current');
 						document.querySelector(link.getAttribute('href')).classList.add('content--switch-current');
 						this.close();
